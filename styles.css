@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubunto', sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+#logo {
+
+    font-size: 45px;
+    text-decoration: none;
+    color: rgba(20, 2, 2, 0.904);
+}
+
+#menu img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+
+}
+
+div #security {
+    width: 40px;
+    height: 40px;
+}
+
+.corporation {
+    padding: 0 20px 0 0;
+}
+
+nav + div {
+    background-color: blue;
+}
+
+#menu a {
+    text-decoration: none;
+    color: rgba(20, 2, 2, 0.904);
+    padding: 12px 20px;
+    transition: ease-in-out 400ms;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#menu a:hover {
+    color: #2e78cc;
+}
+
+body main {
+    margin-top: 60px;
+}
+
+ #menu-hambur {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+} 
+
+
+/* Primera parte de la pagina */
+
+#principal {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+div img {
+   width: 500px;
+   height: 400px;
+}
+
+#part1 {
+    width: auto;
+}
+
+#part1 h2 {
+    width: 500px;
+    line-height: 55px;
+    font-size: 40px;
+}
+
+#part1 > p {
+    width: 500px;
+    line-height: 22px;
+    padding: 22px 0;
+}
+
+div input {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#part1 div button {
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(37, 37, 240);
+    color: white;
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+}
+
+#part1 div button:hover {
+    background-color: rgb(86, 86, 230);
+    color: beige;
+}
+
+/* Segunda parte de la pagina */
+
+#secundario {
+    display: grid;
+    grid-template-columns: 620px auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    margin-top: 200px;
+}
+
+#part2 section {
+    width: 450px;
+    height: 280px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px  rgba(201, 193, 193, 0.897), -4px -4px 10px  rgba(201, 193, 193, 0.897);
+    padding: 40px 26px 0;
+}
+
+#secundario div img {
+    width: 400px;
+    height: 400px;
+}
+
+#part2 h2 {
+    width: 500px;
+    line-height: 55px;
+    font-size: 40px;
+}
+
+#part2 > p {
+    line-height: 25px;
+    width: 500px;
+}
+
+#part2 h3 {
+    color: rgb(118, 224, 12);
+    padding: 5px 0;
+    border-bottom-style: inset;
+    border-bottom-color:  rgb(118, 224, 12);
+    border-bottom-width: thick;
+    margin-bottom: 60px;
+}
+
+#part2 section::first-line {
+    font-size: 50px;
+}
+
+#part2 section p {
+    line-height: 28px;
+}
+
+section #descripcion img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#part2 .des div img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid  rgb(118, 224, 12);
+    border-radius: 50%;
+    background-color:  rgb(118, 224, 12);
+    margin: 5px 0 0 5px;
+}
+
+#part2 .des {
+    display: flex;
+    flex-direction: row;
+}
+
+section #descripcion {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin: 10px auto;
+    width: auto;
+}
+
+#descripcion div h4 {
+    font-size: 20px;
+}
+
+/*  Sub Footer */
+
+#sub {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background-color: rgb(129, 73, 235);
+    width: 100%;
+    height: 300px;
+    column-gap: 40px;
+}
+
+#free {
+    padding-bottom: 6px;
+}
+
+#free h3 {
+    font-size: 40px;
+    color: white;
+    padding: 12px 0;
+    text-align: center;
+    
+}
+
+#free p {
+    width: 60%;
+    color: white;
+    line-height: 25px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 5px auto;
+}
+
+#sub div input {
+    width: 400px;
+    border-radius: 3px;
+    height: 45px;
+}
+
+#boton {
+    width: 45%;
+    height: 40px;
+    border-radius: 3px;
+    background-color:  rgb(46, 46, 218);
+    color: white;
+    transition: ease-in-out 300ms; 
+    margin-top: 6px;
+}
+
+#boton:hover {
+    background-color: rgb(72, 72, 236);
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(43, 43, 124);
+}
+
+.footer-content img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-content h2 {
+    font-size: 45px;
+    color: white;
+}
+
+ .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 50px 40px;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#info section {
+    display: inherit;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    cursor: pointer;
+}
+
+#info section a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#info #social img {
+    width: 25px;
+    height: 25px;
+}
+
+#info-me div img {
+    width: 25px;
+    height: 25px;
+}
+
+#info #info-me > div {
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.content {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.visibles {
+    opacity: 1;
+}
+
+/* Dispositivos moviles */
+@media screen and (max-width: 625px){
+
+    #info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 40px;
+        padding: 10px 30px 20px 30px;
+    }
+
+    #info #social {
+        display: inherit;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        gap: 50px;
+    }
+
+    footer {
+        width: auto;
+        height: auto;
+    }
+
+    #principal .img img {
+        width: 380px;
+        height: 320px;
+    }
+
+    #secundario div .inter{
+        width: 340px;
+        height:340px;
+    }
+
+    #principal #part1 h2 {
+        width: 370px;
+        line-height: 46px;
+    }
+
+    #principal #part1 p {
+        width: 350px;
+        padding: 10px 0 16px 0;
+    }
+
+    #secundario #part2 h2 {
+       width: 370px;
+       font-size: 40px;
+       line-height: 46px;
+    }
+
+    #secundario #part2 > p {
+        width: 360px;
+        padding: 6px 0;
+        margin: 10px auto;
+    }
+
+      nav #menu-hambur,
+      #menu img {
+        display: block;
+    }
+
+     header nav {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: -916%;
+        background-color: rgb(53, 53, 124);
+        padding: 30px 28px 30px 40px;
+        align-items: start;
+        transition: ease-in-out 300ms;
+    }
+    /* Si se activa la clase */
+     header nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    nav #menu {
+        display: inherit;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        gap: 12px;
+    }
+    nav #menu a{
+        color: white;
+    }
+
+    header #menu-hambur {
+        width: 36px;
+        height: 36px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #menu img {
+        width: 40px;
+        height: 40px;
+    }
+    
+
+
+}
+
+@media(max-width: 400px) {
+    #principal .img img {
+        width: 320px;
+    }
+
+    #secundario div .inter{
+        width: 320px;
+        height:320px;
+
+    }
+
+    #secundario #part2 > p {
+        width: 320px;
+    }
+
+    #secundario #part2 section {
+        width: 310px;
+        height: auto;
+    }
+    
+    section #descripcion {
+       padding: 10px 0 20px 0;
+    }
+}
+
+@media(max-width: 1050px){
+    
+    main #principal {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #principal div img {
+        margin: 10px auto;
+    }
+
+    #part1 {
+        text-align: center;
+        margin: 50px;
+    }
+
+    #part1 h2 {
+        font-size: 2.5em;
+        text-align: center;
+        padding: 1em;
+        margin: 10px auto;
+    }
+
+    #part1 p {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    #guardar {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #email {
+        width: 170%;
+    }
+
+    #part1 div button {
+        width: 170%;
+        margin-top: 14px;
+    }
+
+    #part2 {
+        text-align: center;
+        margin: 60px;
+    }
+
+    #part2 h2 {
+        margin: 10px auto;
+    }
+
+    .des {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    #part2 section p{
+        text-align: start;
+    }
+
+    #descripcion div h4 {
+        text-align: start;
+    }
+
+    #part2 section {
+      margin: 5px auto;
+      width: 350px;
+      height: 320px;
+    }
+
+    main #secundario {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #secundario div img {
+        margin: 10px auto;
+    }
+
+    #sub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    #free {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+    }
+    #free h3 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 16px 0;
+    }
+
+    #free p {
+        text-align: center;
+    }
+
+    #sub div input {
+        width: 170%;
+    }
+
+    div #boton {
+        width: 170%;
+    }
+
+    #check {
+       display: inherit;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 20px 0 60px 0;
+    }
+
+}
